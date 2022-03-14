@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int t , cap , buc;
+	cin>>t;
+	while(t--)
+    {
+        cin>>cap >>buc;
+        buc= buc*2;
+        
+        if(cap<buc)
+         std::cout << 0 << std::endl;
+         
+        else if(cap ==buc)
+        {
+         std::cout << 1<< std::endl;
+        }
+        else
+        {
+         std::cout << cap/buc << std::endl;
+        }
+    }
+	return 0;
+}
